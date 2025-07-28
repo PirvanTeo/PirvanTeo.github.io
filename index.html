@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teo's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="neural-bg"></canvas>
+
+  <nav class="navbar">
+    <a data-target="about" class="nav-link">About</a>
+    <a data-target="projects" class="nav-link">Projects</a>
+    <a data-target="contact" class="nav-link">Contact</a>
+  </nav>
+
+  <div class="center-content">
+    <img src="teo.jpg" alt="Foto Profilo" class="profile-pic" />
+    <h1><span>Teo's</span> Portfolio</h1>
+    <p>Neural networks. Machine learning. Deep learning.</p>
+  </div>
+
+  <!-- Pop-up sections -->
+  <div id="about" class="popup-section">
+  <button class="close-btn" onclick="closePopup()">✖</button>
+  <h2>About Me</h2>
+  <p>
+    I'm a novice developer with a passion for artificial intelligence, neural networks, and everything related to technology.
+I want to learn how to create innovative projects and solve complex problems with AI.
+  </p>
+  <p>
+    <a href="cv.html" target="_blank" class="cv-link">See my CV here!</a>
+  </p>
+</div>
+
+
+  <div id="projects" class="popup-section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Future Projects:</h3>
+    <div class="project-card">
+      <h3>Image Classifier</h3>
+      <p>CNN network with TensorFlow for image classification.</p>
+    </div>
+    <div class="project-card">
+      <h3>Chatbot NLP</h3>
+      <p>Conversational bot in Italian with RNN and BERT.</p>
+    </div>
+    <div class="project-card">
+      <h3>Imitation for Reinforcement Learning</h3>
+      <p>Copying best behaviors as a chance to improve survival rate.</p>
+    </div>
+  </div>
+  </div>
+
+  <div id="contact" class="popup-section">
+    <h2>Contact</h2>
+    <p>Write to me: </p><a href="email">teonicusor.pirvan@studium.unict.it</a></p>
+  </div>
+  
+
+  <div id="footer">
+    <p>© 2025 Teo Pirvan</p>
+    <p>All rights reserved!</p>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
