@@ -66,8 +66,8 @@ function drawLines(nodes) {
       const dx = nodes[i].x - nodes[j].x;
       const dy = nodes[i].y - nodes[j].y;
       const dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist < 140) {
-        ctx.strokeStyle = `rgba(88, 166, 255, ${1 - dist / 140})`;
+      if (dist < 160) {
+        ctx.strokeStyle = `rgba(88, 166, 255, ${1 - dist / 160})`;
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(nodes[i].x, nodes[i].y);
